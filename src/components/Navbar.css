@@ -1,0 +1,200 @@
+/* Navbar.css */
+
+/* Main header container */
+.navbar {
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+/* Content container */
+.navbar-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Flex container for navbar items */
+.navbar-content {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 0;
+}
+
+/* Left section with logo and nav items */
+.navbar-left {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Logo container */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 0;
+}
+
+/* Logo text styling */
+.navbar-logo-text {
+  font-size: 18px;
+  font-weight: 700;
+  color: #3b82f6; /* Updated to blue-500 */
+  text-decoration: none;
+}
+
+/* Navigation links container */
+.navbar-navigation {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+}
+
+/* Space between navigation items */
+.navbar-nav-list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+/* Individual nav link styling */
+.navbar-nav-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #10b981; /* Updated to emerald-500 */
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.navbar-nav-link:hover {
+  color: #059669; /* emerald-600 */
+  background-color: #f3f4f6;
+}
+
+/* Right section with user info */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 12px;
+}
+
+/* User section container */
+.navbar-user {
+  width: 100%;
+}
+
+/* User info container */
+.navbar-user-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Username text */
+.navbar-username {
+  font-size: 14px;
+  color: #374151;
+}
+
+/* Logout button */
+.navbar-logout-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  background-color: #f43f5e; /* Updated to rose-500 */
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.navbar-logout-btn:hover {
+  background-color: #e11d48; /* rose-600 */
+}
+
+.navbar-logout-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px white, 0 0 0 4px #f43f5e;
+}
+
+/* Media query for small screens and up */
+@media (min-width: 640px) {
+  .navbar-content {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 64px;
+    padding: 0;
+  }
+  
+  .navbar-container {
+    padding: 0 16px;
+  }
+  
+  .navbar-left {
+    flex-direction: row;
+    width: auto;
+  }
+  
+  .navbar-logo {
+    justify-content: flex-start;
+    padding: 0;
+  }
+  
+  .navbar-navigation {
+    margin-left: 24px;
+    width: auto;
+    margin: 0 0 0 24px;
+  }
+  
+  .navbar-nav-list {
+    gap: 24px;
+  }
+  
+  .navbar-nav-link {
+    height: 64px;
+    padding: 0 4px;
+    padding-top: 4px;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .navbar-nav-link:hover {
+    border-bottom-color: #d1d5db;
+    background-color: transparent;
+  }
+  
+  .navbar-right {
+    width: auto;
+    margin-top: 0;
+    margin-left: 24px;
+  }
+  
+  .navbar-user {
+    position: relative;
+    margin-left: 12px;
+    width: auto;
+  }
+  
+  .navbar-user-info {
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    gap: 12px;
+  }
+}
+
+/* Media query for large screens */
+@media (min-width: 1024px) {
+  .navbar-container {
+    padding: 0 32px;
+  }
+}
